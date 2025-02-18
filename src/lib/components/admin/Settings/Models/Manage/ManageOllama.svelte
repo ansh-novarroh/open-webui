@@ -601,9 +601,32 @@
 							class="w-full rounded-lg py-2 px-4 text-sm bg-gray-50 dark:text-gray-300 dark:bg-gray-850 outline-hidden"
 							bind:value={modelTag}
 							>
+							<!-- huggingface models -->
+							<option value="hf.co/unsloth/DeepSeek-R1-Distill-Llama-8B-GGUF">
+								DeepSeek Distill Llama 8B (GGUF)
+							</option>
+							<option value="hf.co/unsloth/DeepSeek-R1-Distill-Qwen-1.5B-GGUF">
+								DeepSeek Distill Qwen 1.5B (GGUF)
+							</option>
+							<option value="hf.co/unsloth/DeepSeek-R1-Distill-Qwen-7B-GGUF">
+								DeepSeek Distill Qwen 7B (GGUF)
+							</option>
+							<option value="hf.co/unsloth/DeepSeek-R1-Distill-Qwen-32B-GGUF">
+								DeepSeek Distill Qwen 32B (GGUF)
+							</option>
+							<!-- LLaMA Models (Hosted on Ollama) -->
+							<option value="llama3.2:1b">
+								LLaMA 3.2 1B
+							</option>
+							<option value="llama3.2:3b">
+								LLaMA 3.2 3B
+							</option>
+							<option value="llama3.1:8b">
+								LLaMA 3.1 8B
+							</option>
 							<option value="qwen:7b">QWEN 7B</option>
 							<option value="qwen:4b">QWEN 4B</option>
-						</select>
+							</select>
 						</div>
 						<button
 							class="px-2.5 bg-gray-50 hover:bg-gray-200 text-gray-800 dark:bg-gray-850 dark:hover:bg-gray-800 dark:text-gray-100 rounded-lg transition"
