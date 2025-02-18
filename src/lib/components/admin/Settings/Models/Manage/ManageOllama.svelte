@@ -597,13 +597,13 @@
 					</div>
 					<div class="flex w-full">
 						<div class="flex-1 mr-2">
-							<input
-								class="w-full rounded-lg py-2 px-4 text-sm bg-gray-50 dark:text-gray-300 dark:bg-gray-850 outline-hidden"
-								placeholder={$i18n.t('Enter model tag (e.g. {{modelTag}})', {
-									modelTag: 'mistral:7b'
-								})}
-								bind:value={modelTag}
-							/>
+							<select
+							class="w-full rounded-lg py-2 px-4 text-sm bg-gray-50 dark:text-gray-300 dark:bg-gray-850 outline-hidden"
+							bind:value={modelTag}
+							>
+							<option value="qwen:7b">QWEN 7B</option>
+							<option value="qwen:4b">QWEN 4B</option>
+						</select>
 						</div>
 						<button
 							class="px-2.5 bg-gray-50 hover:bg-gray-200 text-gray-800 dark:bg-gray-850 dark:hover:bg-gray-800 dark:text-gray-100 rounded-lg transition"
